@@ -13,6 +13,9 @@ services:
   orderdb:
     image: mcr.microsoft.com/mssql/server:2019-latest
 
+  rabbitmq:
+    image: rabbitmq:3.8-management-alpine
+    
   mongoclient:
     image: mongoclient/mongoclient
 
