@@ -9,6 +9,11 @@ namespace Ordering.Application.Features.Orders.Queries.GetOrdersList
 {
     public class GetOrdersListQuery : IRequest<List<OrdersVm>>
     {
-        public string UserName { get; set; }
+        public string UserName { get; }
+
+        public GetOrdersListQuery(string username)
+        {
+            UserName = username;
+        }
     }
 }
