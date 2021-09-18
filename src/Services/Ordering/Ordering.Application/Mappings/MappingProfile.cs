@@ -16,8 +16,8 @@ namespace Ordering.Application.Mappings
         public MappingProfile()
         {
             CreateMap<Order, OrdersVm>();
-            CreateMap<Order, CheckoutOrderCommand>();
-            CreateMap<Order, UpdateOrderCommand>();
+            CreateMap<CheckoutOrderCommand, Order>();
+            CreateMap<UpdateOrderCommand, Order>();
         }
     }
 }

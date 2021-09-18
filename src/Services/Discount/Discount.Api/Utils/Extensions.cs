@@ -10,7 +10,7 @@ namespace Discount.Api.Utils
 {
     public static class Extensions
     {
-        public static IHost MigrateDatabse<TContext>(this IHost host, int retry = 0)
+        public static IHost MigrateDatabse<TContext>(this IHost host, int retry = 10)
         {
             using var scope = host.Services.CreateScope();
             var services = scope.ServiceProvider;
@@ -55,6 +55,7 @@ namespace Discount.Api.Utils
                 {
                     logger.LogWarning("Attempts remaining {0}", retry);
                     Thread.Sleep(2000);
+
                     logger.LogWarning("Trying the Migration again...");
                     MigrateDatabse<TContext>(host, retry);
                 }

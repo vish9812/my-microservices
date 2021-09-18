@@ -7,6 +7,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Ordering.Application;
+using Ordering.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,12 +28,12 @@ namespace Ordering.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddApplicationServices();
-            //services.AddInfrastructureServices();
+            services.AddInfrastructureServices(Configuration);
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Order.Api", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Ordering.Api", Version = "v1" });
             });
         }
 
@@ -43,7 +44,7 @@ namespace Ordering.Api
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Order.Api v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Ordering.Api v1"));
             }
 
             app.UseRouting();
