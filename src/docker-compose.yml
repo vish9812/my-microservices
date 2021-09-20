@@ -55,6 +55,12 @@ services:
       context: .
       dockerfile: Services/Ordering/Ordering.Api/Dockerfile
 
+  ocelotapigateway:
+    image: ${DOCKER_REGISTRY-}ocelotapigateway
+    build:
+      context: .
+      dockerfile: ApiGateways/OcelotApiGateway/Dockerfile
+
 volumes:
   mongo_data:
   mongoclient_data:
@@ -62,3 +68,4 @@ volumes:
   postgres_data:
   pgadmin_data:
   sql2019_data:
+
