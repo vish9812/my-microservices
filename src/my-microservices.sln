@@ -37,7 +37,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventBus.Messages", "Buildi
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{C1AD0447-83AA-4F69-B14B-42F73C37EA33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotApiGateway", "ApiGateways\OcelotApiGateway\OcelotApiGateway.csproj", "{7EC466B2-33BE-49A9-ACC3-53D1A853B425}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OcelotApiGateway", "ApiGateways\OcelotApiGateway\OcelotApiGateway.csproj", "{7EC466B2-33BE-49A9-ACC3-53D1A853B425}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Aggregator", "ApiGateways\Shopping.Aggregator\Shopping.Aggregator.csproj", "{CDFD67FB-B410-4CBC-8A32-B9BCEAB1FC15}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -89,6 +91,10 @@ Global
 		{7EC466B2-33BE-49A9-ACC3-53D1A853B425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7EC466B2-33BE-49A9-ACC3-53D1A853B425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7EC466B2-33BE-49A9-ACC3-53D1A853B425}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDFD67FB-B410-4CBC-8A32-B9BCEAB1FC15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDFD67FB-B410-4CBC-8A32-B9BCEAB1FC15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDFD67FB-B410-4CBC-8A32-B9BCEAB1FC15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDFD67FB-B410-4CBC-8A32-B9BCEAB1FC15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +114,7 @@ Global
 		{57804FE7-75F2-465F-8634-AAEF6481443B} = {E1C60947-75B4-47AB-950D-F7E1C179A6A4}
 		{36D0B7AD-244A-4363-83FF-4F4B61E0DE66} = {041C5034-A34F-44CC-A870-A09D9A0322D3}
 		{7EC466B2-33BE-49A9-ACC3-53D1A853B425} = {C1AD0447-83AA-4F69-B14B-42F73C37EA33}
+		{CDFD67FB-B410-4CBC-8A32-B9BCEAB1FC15} = {C1AD0447-83AA-4F69-B14B-42F73C37EA33}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4F8B8D18-28BC-47C6-A4F4-BF00FD7B7696}
